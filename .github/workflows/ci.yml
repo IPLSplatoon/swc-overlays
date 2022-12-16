@@ -64,15 +64,6 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-      - name: Merge master branch into build branch
-        if: github.ref == 'refs/heads/master'
-        continue-on-error: true
-        working-directory: ./nodecg/bundles/swc-overlays
-        run: |
-          git checkout master
-          git checkout build
-          git merge master
-
       - name: Build
         if: github.ref == 'refs/heads/master'
         working-directory: ./nodecg/bundles/swc-overlays
@@ -83,7 +74,9 @@ jobs:
       - name: Clear source files
         if: github.ref == 'refs/heads/master'
         working-directory: ./nodecg/bundles/swc-overlays
-        run: rm -rf ./src
+        run: | 
+          rm -rf ./src
+          git add src
 
       - name: Commit built files
         if: github.ref == 'refs/heads/master'
@@ -91,6 +84,7 @@ jobs:
         continue-on-error: true
         working-directory: ./nodecg/bundles/swc-overlays
         run: |
+          git checkout -B build
           git add -f graphics
           git commit -m "Build result from master branch" -a
 
@@ -98,6 +92,7 @@ jobs:
         if: github.ref == 'refs/heads/master'
         uses: ad-m/github-push-action@master
         with:
+          force: true
           github_token: ${{ secrets['GITHUB_TOKEN'] }}
           branch: build
           directory: ./nodecg/bundles/swc-overlays
