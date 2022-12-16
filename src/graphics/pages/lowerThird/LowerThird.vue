@@ -121,7 +121,7 @@ body {
         }
 
         > .logo-wrapper {
-            @include red-gradient-bg(70deg);
+            @include gradient-bg(70deg);
             @include container-shadow(4px);
 
             width: 130px;

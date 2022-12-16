@@ -132,11 +132,11 @@ export default defineComponent({
             }
 
             &:nth-child(odd) {
-                @include red-gradient-bg(70deg);
+                @include gradient-bg(70deg);
             }
 
             &:nth-child(even) {
-                @include red-gradient-bg(250deg);
+                @include gradient-bg(250deg);
             }
         }
     }

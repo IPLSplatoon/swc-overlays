@@ -105,13 +105,13 @@ export default defineComponent({
 
     &.team-A {
         .team-name-wrapper {
-            @include red-gradient-bg(70deg);
+            @include gradient-bg(70deg);
         }
     }
 
     &.team-B {
         .team-name-wrapper {
-            @include red-gradient-bg(250deg);
+            @include gradient-bg(250deg);
         }
     }
 

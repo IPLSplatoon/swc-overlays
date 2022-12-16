@@ -160,6 +160,13 @@ export default defineComponent({
                 height: 100%;
                 overflow: hidden;
                 border-radius: 4px;
+                background:
+                    linear-gradient(185deg, transparent 0%, transparent 60%, rgba(255, 255, 255, 0.05) 60%, rgba(255, 255, 255, 0.05) 100%),
+                    linear-gradient(0deg, #09224F 0%, #0E357A 100%);
+
+                .team-score {
+                    background: linear-gradient(175deg, #00074A 0%, #00074A 50%, #000536 50%, #000536 100%);
+                }
 
                 .score-color-wrapper {
                     display: flex;
@@ -186,14 +193,13 @@ export default defineComponent({
                         &:after {
                             content: '';
                             width: 100%;
-                            height: 100%;
+                            height: 50%;
                             position: absolute;
                             left: 0;
-                            top: 0;
+                            bottom: 0;
                             border-radius: 0 4px 4px 0;
                             background-color: rgba(0, 0, 0, 0.25);
                             mix-blend-mode: overlay;
-                            clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
                         }
                     }
                 }
@@ -216,34 +222,6 @@ export default defineComponent({
                     font-size: 15px;
                     margin-bottom: -8px;
                 }
-
-                &.team-alpha {
-                    background: linear-gradient(
-                        70deg,
-                        #805628 0%,
-                        #6B451A 10%,
-                        #55391A 15%,
-                        #C1742C 15%,
-                        #CF9762 100%);
-
-                    .team-score {
-                        background: linear-gradient(175deg, #2E261C 0%, #2E261C 50%, #1E170C 50%, #1E170C 100%);
-                    }
-                }
-
-                &.team-bravo {
-                    background: linear-gradient(
-                        110deg,
-                        #3B476C 0%,
-                        #2F3956 10%,
-                        #232A40 15%,
-                        #5643B9 15%,
-                        #6F60BF 100%);
-
-                    .team-score {
-                        background: linear-gradient(175deg, #23252B 0%, #23252B 50%, #14141B 50%, #14141B 100%);
-                    }
-                }
             }
         }
     }
@@ -252,7 +230,7 @@ export default defineComponent({
         margin-top: 2px;
         height: 38px;
         border-radius: 4px;
-        background-color: #1A1816;
+        background-color: #111;
 
         > .flavor-text {
             font-size: 24px;

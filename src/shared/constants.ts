@@ -31,6 +31,8 @@ import ImgUndertow from 'img/stages/S3UndertowSpillwayIcon.png';
 import ImgMincemeat from 'img/stages/S3MincemeatMetalworksIcon.png';
 import ImgHammerhead from 'img/stages/S3HammerheadBridgeIcon.png';
 import ImgMahi from 'img/stages/S3MahiMahiResortIcon.png';
+import ImgFlounder from 'img/stages/S3_Stage_Flounder_Heights.png';
+import ImgBrinewater from 'img/stages/S3_Brinewater_Springs.png';
 
 export const DASHBOARD_BUNDLE_NAME = 'ipl-overlay-controls';
 
@@ -67,6 +69,8 @@ export const mapNameToImagePath: Record<string, string> = {
     'Mincemeat Metalworks': ImgMincemeat,
     'Hammerhead Bridge': ImgHammerhead,
     'Mahi-Mahi Resort': ImgMahi,
+    'Flounder Heights': ImgFlounder,
+    'Brinewater Springs': ImgBrinewater,
     'Unknown Stage': ImgUnknown,
     Counterpick: ImgUnknown
 };

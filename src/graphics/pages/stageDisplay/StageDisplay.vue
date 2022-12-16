@@ -275,7 +275,7 @@ export default defineComponent({
                 }
 
                 .stage-name {
-                    @include red-gradient-bg(70deg);
+                    @include gradient-bg(70deg);
 
                     font-size: 36px;
                     line-height: 43px;
