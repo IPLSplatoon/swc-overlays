@@ -1,7 +1,7 @@
 {
-    "name": "area-cup-overlays",
+    "name": "swc-overlays",
     "version": "0.1.0",
-    "description": "Broadcast overlays for Inkling Performance Labs' English language broadcast of the Clam World Cup.",
+    "description": "Broadcast overlays for Inkling Performance Labs' English language coverage of the Splat World Championship.",
     "compatibleDashboardVersion": "^4.1.0",
     "compatibleGameVersions": ["SPLATOON_2", "SPLATOON_3"],
     "author": {
