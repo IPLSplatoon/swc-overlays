@@ -34,7 +34,7 @@ $accent: #084ED6;
     border: 1px solid rgba(7, 69, 190, 0.5);
 }
 
-@mixin red-gradient-bg($direction) {
+@mixin gradient-bg($direction) {
     background: linear-gradient(
             $direction,
             #113D8F 0%,
