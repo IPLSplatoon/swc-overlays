@@ -7,7 +7,7 @@ $text-background-alpha-50: rgba(17, 17, 17, 0.5);
 $text-background-secondary-alpha: rgba(51, 51, 51, 0.9);
 $drop-shadow-color: rgba(255, 255, 255, 0.2);
 
-$accent: #0E3377;
+$accent: #084ED6;
 
 @mixin striped-background($stripe-color-1: rgba(21, 21, 21, 0.99), $stripe-color-2: rgba(14, 14, 14, 0.99)) {
     background-image: linear-gradient(
@@ -31,7 +31,7 @@ $accent: #0E3377;
 }
 
 @mixin container-border {
-    border: 1px solid rgba(14, 51, 119, 0.5);
+    border: 1px solid rgba(7, 69, 190, 0.5);
 }
 
 @mixin red-gradient-bg($direction) {
