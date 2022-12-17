@@ -1,9 +1,6 @@
 <template>
     <div class="lower-third-wrapper">
         <div class="lower-third-content">
-            <div class="logo-wrapper">
-                <div class="logo" />
-            </div>
             <div class="lower-third-slides">
                 <div class="slide-content">
                     <transition
@@ -118,28 +115,6 @@ body {
             width: 2px;
             height: 80%;
             background-color: $accent;
-        }
-
-        > .logo-wrapper {
-            @include gradient-bg(70deg);
-            @include container-shadow(4px);
-
-            width: 130px;
-            height: 100%;
-            padding: 0 16px;
-            margin-right: 8px;
-            border-radius: $default-border-radius;
-
-            > .logo {
-                @include text-shadow;
-
-                width: 100%;
-                height: 100%;
-                background-image: url('../../../assets/img/logo-vector-white.png');
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
         }
 
         > .lower-third-slides {
