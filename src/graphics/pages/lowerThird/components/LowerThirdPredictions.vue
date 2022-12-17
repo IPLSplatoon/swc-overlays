@@ -124,12 +124,12 @@ export default defineComponent({
 
             &.first-outcome-percentage {
                 left: 0;
-                background: linear-gradient(70deg, #D07D30 0%, #E3860C 100%);
+                background: linear-gradient(70deg, #0F3579 0%, #14459D 100%);
             }
 
             &.second-outcome-percentage {
                 right: 0;
-                background: linear-gradient(70deg, #6F60BF 0%, #6251B9 100%);
+                background: linear-gradient(70deg, #D90C19 0%, #F21927 100%);
             }
         }
     }
