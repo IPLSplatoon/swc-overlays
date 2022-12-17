@@ -3,7 +3,7 @@
         <div class="intermission-main-content">
             <img
                 class="tournament-logo"
-                :src="require('img/logo-color.png')"
+                :src="require('img/logo-transparent.png')"
             >
             <div class="intermission-slides">
                 <transition
@@ -89,11 +89,11 @@ export default defineComponent({
     align-items: center;
 
     > .tournament-logo {
-        width: 275px;
+        width: 800px;
     }
 
     > .intermission-slides {
-        height: 400px;
+        height: 350px;
         width: 100%;
         display: flex;
         align-items: center;

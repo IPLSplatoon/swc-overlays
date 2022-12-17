@@ -108,7 +108,6 @@ export default defineComponent({
 
     .loading-spinner {
         animation: 2000ms loading-spinner linear infinite;
-        margin-top: 40px;
     }
 }
 </style>
