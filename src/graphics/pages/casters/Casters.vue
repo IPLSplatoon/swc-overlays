@@ -10,16 +10,34 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import gsap from 'gsap';
+import { defineComponent, onMounted } from 'vue';
 import { useCasterStore } from '../../../shared/store/casterStore';
 import LargeCasterDisplay from './components/LargeCasterDisplay.vue';
+import { bindEntranceToTimelineGenerator } from '../../helpers/obsSourceHelper';
 
 export default defineComponent({
     name: 'Casters',
+
     components: { LargeCasterDisplay },
 
     setup() {
         const casterStore = useCasterStore();
+
+        onMounted(() => {
+            bindEntranceToTimelineGenerator(() => {
+                const revealTl = gsap.timeline({
+                    delay: 0.75
+                });
+                revealTl
+                    .fromTo(
+                        '.caster-display',
+                        { opacity: 0, y: -35 },
+                        { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out', stagger: 0.1, delay: 0.5 });
+
+                return revealTl;
+            });
+        });
 
         return {
             casterStore
