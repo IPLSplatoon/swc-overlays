@@ -36,7 +36,6 @@
 </template>
 
 <script lang="ts">
-import { NodeCGBrowser } from 'nodecg/browser';
 import { defineComponent } from '@vue/runtime-core';
 import FittedContent from '../../../components/FittedContent.vue';
 import Badge from '../../../components/Badge.vue';

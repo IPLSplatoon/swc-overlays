@@ -1,10 +1,9 @@
-import { NodeCGBrowser } from 'nodecg/browser';
-import { ReplicantBrowser } from 'nodecg/browser';
+import NodeCGTypes from '@nodecg/types';
 import type * as Pinia from 'pinia';
 import cloneDeep from 'lodash/cloneDeep';
 
 export function createReplicantStoreInitializer(
-    reps: ReplicantBrowser<unknown>[],
+    reps: NodeCGTypes.ClientReplicant<unknown>[],
     store: Pinia.StoreDefinition<string, unknown, unknown, unknown>
 ): () => Promise<void> {
     return async () => {
