@@ -1,10 +1,10 @@
-import NodeCGTypes from '@nodecg/types';
+import type NodeCGTypes from '@nodecg/types';
 import type * as Pinia from 'pinia';
 import cloneDeep from 'lodash/cloneDeep';
 
 export function createReplicantStoreInitializer(
     reps: NodeCGTypes.ClientReplicant<unknown>[],
-    store: Pinia.StoreDefinition<string, unknown, unknown, unknown>
+    store: () => Pinia.Store
 ): () => Promise<void> {
     return async () => {
         const storeInstance = store();
