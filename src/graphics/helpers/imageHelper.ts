@@ -1,5 +1,4 @@
 import { isBlank } from '../../shared/helpers/stringHelper';
-import { mapNameToImagePath } from '../../shared/constants';
 
 export async function loadAndCheckIfImageExists(src: string): Promise<boolean> {
     return new Promise(resolve => {
@@ -18,5 +17,3 @@ export async function loadAndCheckIfImageExists(src: string): Promise<boolean> {
         };
     });
 }
-
-export const getStageImagePath = (stage: string): string => mapNameToImagePath[stage];

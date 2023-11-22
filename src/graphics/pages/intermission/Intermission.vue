@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import IntermissionMain from './components/IntermissionMain.vue';
 import IntermissionNextUp from './components/IntermissionNextUp.vue';
 import { computed } from 'vue';

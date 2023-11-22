@@ -31,7 +31,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import { computed } from 'vue';
 import OpacitySwapTransition from '../../../components/OpacitySwapTransition.vue';
 import FittedContent from '../../../components/FittedContent.vue';

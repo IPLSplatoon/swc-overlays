@@ -18,8 +18,7 @@
 </template>
 
 <script lang="ts">
-import { NodeCGBrowser } from 'nodecg/browser';
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import { useSlides } from '../../helpers/useSlides';
 import { DASHBOARD_BUNDLE_NAME } from '../../../shared/constants';
 import { computed } from 'vue';

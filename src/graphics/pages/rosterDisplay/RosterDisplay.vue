@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import TeamRoster from './components/TeamRoster.vue';
 import gsap from 'gsap';
 import { bindEntranceToTimeline } from '../../helpers/obsSourceHelper';

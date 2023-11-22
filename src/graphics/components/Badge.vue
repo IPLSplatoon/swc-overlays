@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import { computed } from 'vue';
 import { getContrastingTextColor } from '@iplsplatoon/vue-components';
 

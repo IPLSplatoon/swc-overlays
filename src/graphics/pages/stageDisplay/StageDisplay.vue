@@ -67,14 +67,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import { computed, onMounted } from 'vue';
 import OpacitySwapTransition from '../../components/OpacitySwapTransition.vue';
 import gsap from 'gsap';
-import { getStageImagePath, loadAndCheckIfImageExists } from '../../helpers/imageHelper';
+import { loadAndCheckIfImageExists } from '../../helpers/imageHelper';
 import { addDots } from '../../../shared/helpers/stringHelper';
 import { bindEntranceToTimelineGenerator } from '../../helpers/obsSourceHelper';
 import { useActiveRoundStore } from '../../../shared/store/activeRoundStore';
+import { useAssetPathStore } from '../../../shared/store/assetPathStore';
 
 const STAGE_SHOW_HIDE_ANIMATION_DURATION = 0.35;
 
@@ -85,6 +86,7 @@ export default defineComponent({
 
     setup() {
         const activeRoundStore = useActiveRoundStore();
+        const assetPathStore = useAssetPathStore();
         const games = computed(() => activeRoundStore.activeRound.games);
 
         onMounted(() => {
@@ -142,10 +144,10 @@ export default defineComponent({
                 }
             })),
             matchId: computed(() => activeRoundStore.activeRound.match.id),
-            getStageImagePath,
+            getStageImagePath: assetPathStore.getStageImagePath,
 
             async stageEnter(elem: HTMLElement, done: gsap.Callback) {
-                await loadAndCheckIfImageExists(getStageImagePath(elem.dataset.stage));
+                await loadAndCheckIfImageExists(assetPathStore.getStageImagePath(elem.dataset.stage));
                 stageEnter(elem, done);
             },
             stageWrapperEnter(elem: HTMLElement, done: gsap.Callback) {

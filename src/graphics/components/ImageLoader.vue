@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import { computed, PropType, ref, watch } from 'vue';
 import { loadAndCheckIfImageExists } from '../helpers/imageHelper';
 import OpacitySwapTransition from './OpacitySwapTransition.vue';
