@@ -67,7 +67,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import { computed, onMounted } from 'vue';
 import OpacitySwapTransition from '../../components/OpacitySwapTransition.vue';
 import gsap from 'gsap';

@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import Scoreboard from './components/Scoreboard.vue';
 import Casters from './components/Casters.vue';
 

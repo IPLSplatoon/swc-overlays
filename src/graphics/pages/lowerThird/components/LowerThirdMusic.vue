@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import OpacitySwapTransition from '../../../components/OpacitySwapTransition.vue';
 import { computed } from 'vue';
 import { getSongNameAsString } from '../../../helpers/musicHelper';

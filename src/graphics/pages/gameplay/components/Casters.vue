@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import FittedContent from '../../../components/FittedContent.vue';
 import Badge from '../../../components/Badge.vue';
 import { ref } from 'vue';

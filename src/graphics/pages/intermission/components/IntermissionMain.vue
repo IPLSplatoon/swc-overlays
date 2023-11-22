@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+import { defineComponent } from 'vue';
 import FittedContent from '../../../components/FittedContent.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faMusic } from '@fortawesome/free-solid-svg-icons/faMusic';
