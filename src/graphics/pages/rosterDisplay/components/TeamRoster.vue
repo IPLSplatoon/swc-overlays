@@ -37,7 +37,7 @@
                     <fitted-content
                         :max-width="450"
                         class="team-player"
-                        :align="position === '1' ? 'left' : 'right'"
+                        align="center"
                     >
                         {{ $helpers.addDots(player.name) }}
                     </fitted-content>
